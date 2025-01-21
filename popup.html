@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome Extention</title>
+    <style>
+        .container{
+            width: 350px;
+            min-height: 170px;
+            box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+            border-radius: 10px;
+            padding: 1rem;
+         
+        }
+        h1{
+            text-align: center;
+            font-size: 2rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(90, 75, 75);
+        }
+        p{
+            font-size: 1.2rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(90, 75, 75);
+
+        }
+        .on{
+           
+            margin-left: 10px;
+            font-size: 1.2rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(90, 75, 75);
+
+        }
+        .off{
+            margin-left: 68px;
+            font-size: 1.2rem;
+            margin-top: -22.5px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(90, 75, 75);
+
+        }
+        .button{
+            border: 2px solid rgb(90, 75, 75);
+            border-radius: 20px;
+            height:2rem;
+            width: 7rem;
+            align-content: center;
+            margin-left: 108px;
+            position: relative;
+            transition: 1s;
+            cursor: pointer;
+
+        }
+        .circle{
+            bottom:0.005rem;
+            left: 0.02rem;
+            position: absolute;
+            width: 3.5rem;
+            height:2rem;
+            background-color: rgb(255, 213, 0);
+            border-radius: 20px;
+            pointer-events: none;
+            transition: 1s;
+
+        }
+        @keyframes movecircleright{
+            0%{
+                left: 0.02rem;
+                transform: translateX(0.02rem);
+                background-color: rgb(255, 213, 0);
+            }
+            100%{
+                left: 100%;
+                transform: translateX(-100%);
+                background-color: #588BE4;
+            }
+
+        }
+        @keyframes movecircleleft{
+            0%{
+                left: 100%;
+                transform: translateX(-100%);
+                background-color: #588BE4;
+               
+            }
+            100%{
+                
+                left: 0.02rem;
+                transform: translateX(0.02rem);
+                background-color: rgb(255, 213, 0);
+            }
+
+        }
+       
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Appearence</h1>
+        <p>This Extention helps you to change any website Appearence :</p>
+        <div class="button">
+            <div class="on">ON</div>
+            <div class="off">OFF</div>
+            <div class="circle"></div>
+        </div>
+        
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
